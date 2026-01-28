@@ -37,7 +37,7 @@ const About = () => {
                                     <FiBookOpen />
                                 </div>
                                 <h4>Education</h4>
-                                <p>IT Student specializing in Software Development and AI/ML technologies</p>
+                                <p>IT Student specializing in Web Development and AI Technologies</p>
                             </div>
 
                             <div className="highlight-card">
@@ -45,7 +45,7 @@ const About = () => {
                                     <FiCode />
                                 </div>
                                 <h4>Focus Areas</h4>
-                                <p>Web Development, UI/UX Design, Machine Learning, and System Architecture</p>
+                                <p>Web Development, UI/UX Design, AI, and System Architecture</p>
                             </div>
 
                             <div className="highlight-card">
@@ -53,7 +53,7 @@ const About = () => {
                                     <FiCoffee />
                                 </div>
                                 <h4>Interests</h4>
-                                <p>Open Source, Modern Frameworks, AI Innovation, and User-Centric Design</p>
+                                <p>Open Source, Modern Frameworks, AI Innovation</p>
                             </div>
                         </div>
                     </div>

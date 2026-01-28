@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FiArrowLeft, FiTarget, FiTrendingUp, FiPackage } from 'react-icons/fi';
+import { FiArrowLeft, FiTarget, FiTrendingUp, FiSearch } from 'react-icons/fi';
+import { SiNextdotjs, SiTypescript, SiGraphql, SiDocker, SiAmazonwebservices, SiTensorflow, SiPostgresql, SiRedis } from 'react-icons/si';
 import './ProjectDetail.css';
 
 const CurrentWorkDetail = () => {
@@ -77,68 +78,41 @@ const CurrentWorkDetail = () => {
                         </div>
                     </section>
 
-                    <section className="detail-section fade-in-up delay-3">
-                        <div className="icon-header">
-                            <FiPackage className="section-icon" />
-                            <h2>Upcoming Projects</h2>
-                        </div>
-                        <p>
-                            I'm planning several exciting projects to apply my learning and expand my portfolio:
-                        </p>
-                        <div className="upcoming-projects">
-                            <div className="project-item">
-                                <h4>Real-time Collaboration Tool</h4>
-                                <p>
-                                    Building a collaborative workspace application with WebSocket integration
-                                    for real-time updates and team communication
-                                </p>
-                                <div className="tech-stack">
-                                    <span className="badge bg-primary">React</span>
-                                    <span className="badge bg-primary">Node.js</span>
-                                    <span className="badge bg-primary">WebSocket</span>
-                                    <span className="badge bg-primary">MongoDB</span>
-                                </div>
+                    <section className="exploring-section fade-in-up delay-3">
+                        <h2><FiSearch className="section-icon" /> Technologies I'm Exploring</h2>
+                        <div className="tech-grid">
+                            <div className="tech-pill nextjs">
+                                <SiNextdotjs className="tech-icon" />
+                                <span className="tech-name">Next.js</span>
                             </div>
-
-                            <div className="project-item">
-                                <h4>AI-Powered Content Assistant</h4>
-                                <p>
-                                    Developing an intelligent content creation tool that leverages AI
-                                    to help users write better, faster
-                                </p>
-                                <div className="tech-stack">
-                                    <span className="badge bg-primary">React</span>
-                                    <span className="badge bg-primary">OpenAI API</span>
-                                    <span className="badge bg-primary">TypeScript</span>
-                                </div>
+                            <div className="tech-pill typescript">
+                                <SiTypescript className="tech-icon" />
+                                <span className="tech-name">TypeScript</span>
                             </div>
-
-                            <div className="project-item">
-                                <h4>Personal Finance Dashboard</h4>
-                                <p>
-                                    Creating a comprehensive financial tracking and analytics platform
-                                    with data visualization and insights
-                                </p>
-                                <div className="tech-stack">
-                                    <span className="badge bg-primary">React</span>
-                                    <span className="badge bg-primary">D3.js</span>
-                                    <span className="badge bg-primary">Firebase</span>
-                                </div>
+                            <div className="tech-pill graphql">
+                                <SiGraphql className="tech-icon" />
+                                <span className="tech-name">GraphQL</span>
                             </div>
-                        </div>
-                    </section>
-
-                    <section className="detail-section fade-in-up delay-4">
-                        <h2>Technologies I'm Exploring</h2>
-                        <div className="tech-stack">
-                            <span className="badge bg-primary">Next.js</span>
-                            <span className="badge bg-primary">TypeScript</span>
-                            <span className="badge bg-primary">GraphQL</span>
-                            <span className="badge bg-primary">Docker</span>
-                            <span className="badge bg-primary">AWS</span>
-                            <span className="badge bg-primary">TensorFlow</span>
-                            <span className="badge bg-primary">PostgreSQL</span>
-                            <span className="badge bg-primary">Redis</span>
+                            <div className="tech-pill docker">
+                                <SiDocker className="tech-icon" />
+                                <span className="tech-name">Docker</span>
+                            </div>
+                            <div className="tech-pill aws">
+                                <SiAmazonwebservices className="tech-icon" />
+                                <span className="tech-name">AWS</span>
+                            </div>
+                            <div className="tech-pill tensorflow">
+                                <SiTensorflow className="tech-icon" />
+                                <span className="tech-name">TensorFlow</span>
+                            </div>
+                            <div className="tech-pill postgresql">
+                                <SiPostgresql className="tech-icon" />
+                                <span className="tech-name">PostgreSQL</span>
+                            </div>
+                            <div className="tech-pill redis">
+                                <SiRedis className="tech-icon" />
+                                <span className="tech-name">Redis</span>
+                            </div>
                         </div>
                     </section>
                 </div>

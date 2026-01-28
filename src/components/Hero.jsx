@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiArrowRight, FiDownload } from 'react-icons/fi';
+import { FiArrowRight, FiDownload, FiAward, FiBriefcase, FiTrendingUp } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
@@ -27,15 +27,15 @@ const Hero = () => {
 
                             <div className="hero-stats fade-in-up delay-2">
                                 <div className="stat-chip">
-                                    <span className="stat-icon">🎓</span>
+                                    <FiAward className="stat-icon" />
                                     <span>Graduation Project</span>
                                 </div>
                                 <div className="stat-chip">
-                                    <span className="stat-icon">💼</span>
+                                    <FiBriefcase className="stat-icon" />
                                     <span>Internship Experience</span>
                                 </div>
                                 <div className="stat-chip">
-                                    <span className="stat-icon">🚀</span>
+                                    <FiTrendingUp className="stat-icon" />
                                     <span>Active Learner</span>
                                 </div>
                             </div>

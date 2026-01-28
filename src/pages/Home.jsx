@@ -19,7 +19,7 @@ const Home = () => {
                 <div className="container">
                     <div className="footer-content">
                         <p>&copy; 2026 Nawaf Alhabib. All rights reserved.</p>
-                        <p className="text-muted">Built with React, Bootstrap, and passion for great UX</p>
+                        <p>Built with React, Bootstrap, and passion for great UX</p>
                     </div>
                 </div>
             </footer>

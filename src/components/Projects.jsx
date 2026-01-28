@@ -8,8 +8,8 @@ const Projects = () => {
             id: 'log-analyzer',
             title: 'Intelligent Log Files Analyzer',
             subtitle: 'Graduation Project',
-            description: 'AI/ML-based system for automated log anomaly detection and analysis. Leverages machine learning algorithms to identify patterns and potential issues in system logs.',
-            tags: ['Python', 'Machine Learning', 'AI', 'Data Analysis']
+            description: 'AI/DL-based system for automated log anomaly detection and analysis. Leverages deep learning algorithms to identify patterns and potential issues in system logs.',
+            tags: ['Python', 'Deep Learning', 'AI', 'Data Analysis']
         },
         {
             id: 'freightlx',

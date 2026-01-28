@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiMail, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi';
+import { FiMail, FiGithub, FiLinkedin, FiSend, FiPhone } from 'react-icons/fi';
 import './Contact.css';
 
 const Contact = () => {
@@ -43,18 +43,26 @@ const Contact = () => {
                                 <FiMail className="contact-icon" />
                                 <div>
                                     <h5>Email</h5>
-                                    <a href="mailto:nawaf@example.com">nawaf@example.com</a>
+                                    <a href="mailto:n.alhabib1@outlook.com">n.alhabib1@outlook.com</a>
+                                </div>
+                            </div>
+
+                            <div className="contact-item">
+                                <FiPhone className="contact-icon" />
+                                <div>
+                                    <h5>Phone</h5>
+                                    <a href="tel:0558034707">0558034707</a>
                                 </div>
                             </div>
 
                             <div className="social-links">
-                                <a href="#" className="social-link" aria-label="GitHub">
+                                <a href="https://github.com/N-Alhabib" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                     <FiGithub />
                                 </a>
-                                <a href="#" className="social-link" aria-label="LinkedIn">
+                                <a href="https://www.linkedin.com/in/nawaf-alhabib" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <FiLinkedin />
                                 </a>
-                                <a href="mailto:nawaf@example.com" className="social-link" aria-label="Email">
+                                <a href="mailto:n.alhabib1@outlook.com" className="social-link" aria-label="Email">
                                     <FiMail />
                                 </a>
                             </div>

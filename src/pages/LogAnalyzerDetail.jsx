@@ -17,7 +17,7 @@ const LogAnalyzerDetail = () => {
                     <div className="detail-badge">Graduation Project</div>
                     <h1 className="detail-title">Intelligent Log Files Analyzer</h1>
                     <p className="detail-subtitle">
-                        AI/ML-based system for automated log anomaly detection and intelligent analysis
+                        AI/DL-based system for automated log anomaly detection and intelligent analysis
                     </p>
                 </div>
 
@@ -25,9 +25,9 @@ const LogAnalyzerDetail = () => {
                     <section className="detail-section fade-in-up delay-1">
                         <h2>Overview</h2>
                         <p>
-                            The Intelligent Log Files Analyzer is a sophisticated machine learning system designed
+                            The Intelligent Log Files Analyzer is a sophisticated Deep Learning system designed
                             to automatically detect anomalies and patterns in system log files. This graduation
-                            project demonstrates the practical application of AI/ML techniques to solve real-world
+                            project demonstrates the practical application of AI/DL techniques to solve real-world
                             IT infrastructure challenges.
                         </p>
                     </section>
@@ -43,7 +43,6 @@ const LogAnalyzerDetail = () => {
                             <li>Manual log analysis is inefficient and doesn't scale</li>
                             <li>Critical anomalies can be missed in high-volume log streams</li>
                             <li>Pattern recognition requires expert knowledge and experience</li>
-                            <li>Real-time monitoring is difficult with traditional approaches</li>
                         </ul>
                     </section>
 
@@ -63,9 +62,9 @@ const LogAnalyzerDetail = () => {
                             <span className="badge bg-primary">Scikit-learn</span>
                             <span className="badge bg-primary">Pandas</span>
                             <span className="badge bg-primary">NumPy</span>
-                            <span className="badge bg-primary">Machine Learning</span>
+                            <span className="badge bg-primary">Deep Learning</span>
                             <span className="badge bg-primary">Data Analysis</span>
-                            <span className="badge bg-primary">NLP</span>
+                            <span className="badge bg-primary">Drain Algorithm</span>
                         </div>
                     </section>
 
@@ -74,19 +73,15 @@ const LogAnalyzerDetail = () => {
                         <div className="features-grid">
                             <div className="feature-card">
                                 <h4>Automated Anomaly Detection</h4>
-                                <p>ML algorithms identify unusual patterns and potential issues automatically</p>
+                                <p>DL algorithms identify unusual patterns and potential issues automatically</p>
                             </div>
                             <div className="feature-card">
                                 <h4>Pattern Recognition</h4>
                                 <p>Learns from historical data to understand normal system behavior</p>
                             </div>
                             <div className="feature-card">
-                                <h4>Real-time Analysis</h4>
-                                <p>Processes log streams in real-time for immediate insights</p>
-                            </div>
-                            <div className="feature-card">
-                                <h4>Intelligent Reporting</h4>
-                                <p>Generates comprehensive reports with actionable recommendations</p>
+                                <h4>Intelligent Dashboard</h4>
+                                <p>Provides a huge insights about the system behavior</p>
                             </div>
                         </div>
                     </section>
@@ -102,22 +97,6 @@ const LogAnalyzerDetail = () => {
                                 <div className="metric-value">80%</div>
                                 <div className="metric-label">Time Saved vs Manual Review</div>
                             </div>
-                            <div className="metric-card">
-                                <div className="metric-value">Real-time</div>
-                                <div className="metric-label">Processing Speed</div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="detail-section fade-in-up delay-7">
-                        <h2>Links & Resources</h2>
-                        <div className="project-links">
-                            <a href="#" className="btn btn-primary">
-                                <FiGithub className="me-2" /> View on GitHub
-                            </a>
-                            <a href="#" className="btn btn-outline-primary">
-                                <FiExternalLink className="me-2" /> Live Demo
-                            </a>
                         </div>
                     </section>
                 </div>

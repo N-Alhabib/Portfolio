@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
+import profileAvatar from '../assets/صورة شخصية.jpg';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -32,7 +33,12 @@ const Navbar = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
             <div className="container">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand d-flex align-items-center" to="/">
+                    <img
+                        src={profileAvatar}
+                        alt="Nawaf Alhabib"
+                        className="navbar-avatar me-2"
+                    />
                     <span className="brand-name">Nawaf Alhabib</span>
                 </Link>
 

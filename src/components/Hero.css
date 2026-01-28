@@ -43,26 +43,36 @@
 }
 
 .stat-chip {
-    background-color: var(--card-bg);
-    border: 1px solid var(--card-border);
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius-lg);
+    background: rgba(30, 41, 59, 0.4);
+    /* Glassy background */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.6rem 1.25rem;
+    border-radius: 50px;
+    /* Pill shape */
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
     font-weight: 500;
-    transition: all var(--transition);
-    box-shadow: var(--shadow);
+    color: var(--text);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .stat-chip:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--primary);
+    transform: translateY(-5px);
+    background: rgba(59, 130, 246, 0.1);
+    /* Primary Blue tinted glass */
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    color: var(--primary);
 }
 
 .stat-icon {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
 }
 
 .hero-cta {

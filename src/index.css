@@ -3,22 +3,29 @@
    =========================== */
 :root {
   /* Color Palette - "Deep Space" Blend (Navy + Indigo + Royal) */
-  --bg: #030712;                /* 60% Dominant (Very Deep Navy/Black) */
-  --bg-secondary: #0a0f1e;      /* Deep Navy */
-  --text: #f8fafc;              /* Crisp Neutral */
-  --text-muted: #94a3b8;        /* Slate Blue-Grey */
-  
-  --primary: #3b82f6;           /* Royal Blue Accent */
-  --primary-hover: #2563eb;      
-  --accent: #6366f1;            /* Indigo Accent (The "Mix") */
+  --bg: #030712;
+  /* 60% Dominant (Very Deep Navy/Black) */
+  --bg-secondary: #0a0f1e;
+  /* Deep Navy */
+  --text: #f8fafc;
+  /* Crisp Neutral */
+  --text-muted: #94a3b8;
+  /* Slate Blue-Grey */
+
+  --primary: #3b82f6;
+  /* Royal Blue Accent */
+  --primary-hover: #2563eb;
+  --accent: #6366f1;
+  /* Indigo Accent (The "Mix") */
   --accent-hover: #4f46e5;
-  
-  --card-bg: rgba(15, 23, 42, 0.8); /* Glassy Navy */
-  --card-border: rgba(51, 65, 85, 0.5); 
-  
+
+  --card-bg: rgba(15, 23, 42, 0.8);
+  /* Glassy Navy */
+  --card-border: rgba(51, 65, 85, 0.5);
+
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--accent));
   --gradient-surface: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg) 100%);
-  
+
   --success: #10b981;
   --warning: #f59e0b;
   --error: #ef4444;
@@ -345,6 +352,11 @@ a:focus-visible {
   border-radius: var(--radius);
   padding: 0.75rem 1rem;
   transition: all var(--transition-fast);
+}
+
+.form-control::placeholder {
+  color: rgba(148, 163, 184, 0.8);
+  /* var(--text-muted) with more visibility */
 }
 
 .form-control:focus,

@@ -9,11 +9,11 @@ const Skills = () => {
         },
         {
             title: 'Tools & Technologies',
-            skills: ['Git', 'VS Code', 'npm', 'Vite', 'Chrome DevTools', 'Figma']
+            skills: ['Git', 'VS Code', 'npm', 'Vite', 'Chrome DevTools',]
         },
         {
-            title: 'AI/ML & Backend',
-            skills: ['Python', 'Machine Learning', 'Data Analysis', 'Node.js', 'APIs', 'Testing']
+            title: 'AI & Backend',
+            skills: ['Python', 'Agents', 'Data Analysis', 'Node.js', 'APIs', 'Testing']
         }
     ];
 
