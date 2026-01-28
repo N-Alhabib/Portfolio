@@ -1,0 +1,17 @@
+.projects-section {
+    background-color: var(--bg);
+}
+
+.section-description {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: var(--font-size-lg);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+@media (max-width: 991px) {
+    .projects-section .row {
+        justify-content: center;
+    }
+}

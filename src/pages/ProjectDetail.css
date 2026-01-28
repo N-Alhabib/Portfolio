@@ -1,0 +1,318 @@
+.project-detail {
+    min-height: 100vh;
+    padding: 100px 0 var(--spacing-2xl);
+    background-color: var(--bg);
+}
+
+.detail-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--card-border);
+}
+
+.detail-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-md);
+}
+
+.detail-title {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-md);
+    background: linear-gradient(135deg, var(--text), var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.detail-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.detail-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detail-section {
+    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-xl);
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.detail-section h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--text);
+}
+
+.detail-section p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.detail-section ul {
+    color: var(--text-muted);
+    line-height: 1.8;
+    padding-left: var(--spacing-lg);
+}
+
+.detail-section li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tech-stack .badge {
+    font-size: var(--font-size-sm);
+    padding: 0.5rem 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.feature-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: var(--spacing-md);
+    transition: all var(--transition);
+}
+
+.feature-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-card h4 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text);
+}
+
+.feature-card p {
+    font-size: var(--font-size-sm);
+    margin-bottom: 0;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.metric-card {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+.metric-value {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    margin-bottom: var(--spacing-sm);
+}
+
+.metric-label {
+    font-size: var(--font-size-sm);
+    opacity: 0.9;
+}
+
+.project-links {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.project-links .btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* FreightLX PDF Viewer Styles */
+.internship-info {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.info-item {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-muted);
+}
+
+.info-item strong {
+    color: var(--text);
+    margin-right: 0.5rem;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.pdf-viewer-container {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pdf-loading,
+.pdf-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2xl);
+    text-align: center;
+}
+
+.pdf-error code {
+    background-color: var(--card-bg);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius);
+    color: var(--primary);
+    font-size: var(--font-size-sm);
+}
+
+.pdf-page {
+    margin-bottom: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.pdf-page canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.pdf-info {
+    margin-top: var(--spacing-md);
+    text-align: center;
+}
+
+/* Current Work Styles */
+.icon-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.section-icon {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.upcoming-projects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.project-item {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: var(--spacing-lg);
+    transition: all var(--transition);
+}
+
+.project-item:hover {
+    border-color: var(--primary);
+    transform: translateX(5px);
+}
+
+.project-item h4 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--text);
+}
+
+.project-item p {
+    margin-bottom: var(--spacing-md);
+}
+
+.project-item .tech-stack {
+    margin-top: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 80px 0 var(--spacing-xl);
+    }
+
+    .detail-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .detail-section {
+        padding: var(--spacing-md);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pdf-actions {
+        flex-direction: column;
+    }
+
+    .pdf-actions .btn {
+        width: 100%;
+    }
+}
