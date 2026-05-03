@@ -8,22 +8,22 @@ const Projects = () => {
             id: 'log-analyzer',
             title: 'Intelligent Log Files Analyzer',
             subtitle: 'Graduation Project',
-            description: 'AI/DL-based system for automated log anomaly detection and analysis. Leverages deep learning algorithms to identify patterns and potential issues in system logs.',
-            tags: ['Python', 'Deep Learning', 'AI', 'Data Analysis']
+            description: 'AI-powered log anomaly detection system achieving up to 95% accuracy across 3 benchmark datasets. Built an end-to-end pipeline covering log ingestion, parsing with Drain3, and ML-based anomaly detection.',
+            tags: ['Python', 'scikit-learn', 'Drain3', 'pandas', 'NumPy']
         },
         {
             id: 'freightlx',
-            title: 'COOP — FreightLX',
-            subtitle: 'Internship',
-            description: 'Comprehensive internship activity log documenting QA testing, UX feedback, documentation, and collaborative contributions to the FreightLX platform.',
-            tags: ['QA Testing', 'UX Review', 'Documentation', 'Collaboration']
+            title: 'IT Intern — FreightLX',
+            subtitle: 'DevOps & Platform Operations',
+            description: 'Led a CI/CD initiative using GitHub Actions across staging and production. Integrated 12 sea ports into the freight search platform and configured deployment environments with Docker and Apache.',
+            tags: ['GitHub Actions', 'Docker', 'Apache', 'CI/CD', 'REST APIs']
         },
         {
             id: 'current-work',
             title: "What I'm Working On",
             subtitle: 'Current Focus',
-            description: 'Exploring new technologies, building side projects, and continuously learning to expand my skill set in web development and AI.',
-            tags: ['Learning', 'Innovation', 'Side Projects']
+            description: 'Deepening DevOps expertise, exploring cloud infrastructure, and building projects that bridge automation and AI — applying lessons from my internship and graduation project.',
+            tags: ['DevOps', 'Cloud', 'Automation', 'AI']
         }
     ];
 

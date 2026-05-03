@@ -7,6 +7,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(160deg, rgba(15, 23, 42, 0.95), rgba(10, 15, 30, 0.9));
 }
 
 .project-card .card::before {
@@ -15,14 +16,42 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
+    background-size: 200% 100%;
     transform: scaleX(0);
-    transition: transform var(--transition);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: shimmer 3s linear infinite paused;
 }
 
 .project-card .card:hover::before {
     transform: scaleX(1);
+    animation-play-state: running;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.project-card .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(99, 102, 241, 0.06), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    pointer-events: none;
+}
+
+.project-card .card:hover::after {
+    opacity: 1;
+}
+
+.project-card .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.3);
+    border-color: rgba(99, 102, 241, 0.3);
 }
 
 .project-subtitle {

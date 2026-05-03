@@ -25,10 +25,10 @@ const LogAnalyzerDetail = () => {
                     <section className="detail-section fade-in-up delay-1">
                         <h2>Overview</h2>
                         <p>
-                            The Intelligent Log Files Analyzer is a sophisticated Deep Learning system designed
-                            to automatically detect anomalies and patterns in system log files. This graduation
-                            project demonstrates the practical application of AI/DL techniques to solve real-world
-                            IT infrastructure challenges.
+                            The Intelligent Log Files Analyzer is an AI-powered system built as my graduation project
+                            at Qassim University (2024–2025). It automatically detects anomalies in system log files
+                            using deep learning, achieving up to 95% accuracy across three benchmark datasets on
+                            both structured and semi-structured log data.
                         </p>
                     </section>
 
@@ -36,35 +36,38 @@ const LogAnalyzerDetail = () => {
                         <h2>Problem Statement</h2>
                         <p>
                             System administrators face the challenge of manually reviewing thousands of log entries
-                            daily to identify potential issues. This process is time-consuming, error-prone, and
-                            often results in delayed detection of critical problems.
+                            to identify failures, intrusions, or degradation — a process that doesn't scale and
+                            misses time-sensitive anomalies.
                         </p>
                         <ul>
-                            <li>Manual log analysis is inefficient and doesn't scale</li>
-                            <li>Critical anomalies can be missed in high-volume log streams</li>
-                            <li>Pattern recognition requires expert knowledge and experience</li>
+                            <li>Manual log review is slow and error-prone at scale</li>
+                            <li>Critical anomalies can go undetected in high-volume log streams</li>
+                            <li>Existing rule-based tools can't adapt to evolving system behavior</li>
                         </ul>
                     </section>
 
                     <section className="detail-section fade-in-up delay-3">
-                        <h2>Solution</h2>
+                        <h2>Pipeline Architecture</h2>
                         <p>
-                            Our AI-powered solution leverages machine learning algorithms to automatically analyze
-                            log files, detect anomalies, and provide actionable insights. The system learns from
-                            historical data to identify normal patterns and flag deviations that may indicate issues.
+                            I designed an end-to-end data pipeline covering every stage from raw logs to anomaly
+                            classification:
                         </p>
+                        <ul>
+                            <li><strong>Log Ingestion:</strong> reads raw log files from structured and semi-structured sources</li>
+                            <li><strong>Parsing:</strong> Drain3 extracts event templates from unstructured log lines</li>
+                            <li><strong>Sequence Preparation:</strong> log events are grouped and encoded into sequences</li>
+                            <li><strong>Deep Learning Detection:</strong> trained deep learning models classify sequences as normal or anomalous</li>
+                        </ul>
                     </section>
 
                     <section className="detail-section fade-in-up delay-4">
                         <h2>Tech Stack</h2>
                         <div className="tech-stack">
                             <span className="badge bg-primary">Python</span>
-                            <span className="badge bg-primary">Scikit-learn</span>
-                            <span className="badge bg-primary">Pandas</span>
+                            <span className="badge bg-primary">scikit-learn</span>
+                            <span className="badge bg-primary">Drain3</span>
+                            <span className="badge bg-primary">pandas</span>
                             <span className="badge bg-primary">NumPy</span>
-                            <span className="badge bg-primary">Deep Learning</span>
-                            <span className="badge bg-primary">Data Analysis</span>
-                            <span className="badge bg-primary">Drain Algorithm</span>
                         </div>
                     </section>
 
@@ -73,29 +76,29 @@ const LogAnalyzerDetail = () => {
                         <div className="features-grid">
                             <div className="feature-card">
                                 <h4>Automated Anomaly Detection</h4>
-                                <p>DL algorithms identify unusual patterns and potential issues automatically</p>
+                                <p>Deep learning models identify deviations from normal log patterns without manual rules</p>
                             </div>
                             <div className="feature-card">
-                                <h4>Pattern Recognition</h4>
-                                <p>Learns from historical data to understand normal system behavior</p>
+                                <h4>Drain3 Log Parsing</h4>
+                                <p>Efficiently extracts event templates from raw, unstructured log lines at scale</p>
                             </div>
                             <div className="feature-card">
-                                <h4>Intelligent Dashboard</h4>
-                                <p>Provides a huge insights about the system behavior</p>
+                                <h4>Multi-dataset Validation</h4>
+                                <p>Benchmarked across 3 real-world datasets covering different log formats and systems</p>
                             </div>
                         </div>
                     </section>
 
                     <section className="detail-section fade-in-up delay-6">
-                        <h2>Results & Impact</h2>
+                        <h2>Results</h2>
                         <div className="metrics-grid">
                             <div className="metric-card">
                                 <div className="metric-value">95%</div>
                                 <div className="metric-label">Anomaly Detection Accuracy</div>
                             </div>
                             <div className="metric-card">
-                                <div className="metric-value">80%</div>
-                                <div className="metric-label">Time Saved vs Manual Review</div>
+                                <div className="metric-value">3</div>
+                                <div className="metric-label">Benchmark Datasets</div>
                             </div>
                         </div>
                     </section>

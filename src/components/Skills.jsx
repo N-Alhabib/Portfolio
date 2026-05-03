@@ -4,16 +4,16 @@ import './Skills.css';
 const Skills = () => {
     const skillCategories = [
         {
-            title: 'Front-end',
-            skills: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Responsive Design', 'UI/UX']
+            title: 'DevOps & CI/CD',
+            skills: ['GitHub Actions', 'Docker', 'Apache', 'CI/CD Pipelines', 'Environment Configuration']
         },
         {
-            title: 'Tools & Technologies',
-            skills: ['Git', 'VS Code', 'npm', 'Vite', 'Chrome DevTools',]
+            title: 'Data & AI',
+            skills: ['Python', 'scikit-learn', 'Drain3', 'pandas', 'NumPy', 'Log Analysis', 'Anomaly Detection']
         },
         {
-            title: 'AI & Backend',
-            skills: ['Python', 'Agents', 'Data Analysis', 'Node.js', 'APIs', 'Testing']
+            title: 'Development & APIs',
+            skills: ['JavaScript', 'HTML', 'CSS', 'REST APIs', 'API Testing', 'Git', 'GitHub']
         }
     ];
 

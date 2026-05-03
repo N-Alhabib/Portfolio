@@ -30,31 +30,36 @@
 }
 
 .highlight-card {
-    background-color: var(--card-bg);
+    background: linear-gradient(160deg, rgba(15, 23, 42, 0.95), rgba(10, 15, 30, 0.9));
     border: 1px solid var(--card-border);
+    border-left: 3px solid transparent;
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
     transition: all var(--transition);
     box-shadow: var(--shadow);
+    position: relative;
 }
 
 .highlight-card:hover {
-    transform: translateX(10px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--primary);
+    transform: translateX(6px);
+    border-left-color: var(--primary);
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.4), -4px 0 20px -4px rgba(99, 102, 241, 0.15);
+    border-color: var(--card-border);
+    border-left-color: var(--primary);
 }
 
 .highlight-icon {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
-    border-radius: var(--radius);
+    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: var(--spacing-md);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .highlight-card h4 {

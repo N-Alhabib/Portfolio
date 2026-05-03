@@ -63,6 +63,7 @@
   --radius: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
+  --radius-2xl: 1.5rem;
 
   /* Transitions */
   --transition-fast: 150ms ease-in-out;
@@ -147,12 +148,21 @@ a:hover {
 
 .section-title {
   font-size: var(--font-size-4xl);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
   text-align: center;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.section-description {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--font-size-lg);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+  line-height: 1.7;
 }
 
 .text-muted {
@@ -221,21 +231,12 @@ a:hover {
 }
 
 /* Stagger animation delays */
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
-
-.delay-4 {
-  animation-delay: 0.4s;
-}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
 
 /* ===========================
    FOCUS STATES (ACCESSIBILITY)
@@ -291,37 +292,55 @@ a:focus-visible {
    BOOTSTRAP OVERRIDES
    =========================== */
 .btn-primary {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background: var(--gradient-primary);
+  border-color: transparent;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   font-weight: 600;
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   transition: all var(--transition);
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity var(--transition);
 }
 
 .btn-primary:hover {
-  background: var(--gradient-primary);
   border-color: transparent;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -5px rgba(59, 130, 246, 0.5);
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.btn-primary:hover::after {
+  opacity: 1;
 }
 
 .btn-outline-primary {
   border-color: var(--primary);
   color: var(--primary);
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   font-weight: 600;
-  border-radius: var(--radius);
+  border-radius: var(--radius-md);
   transition: all var(--transition);
+  background: transparent;
 }
 
 .btn-outline-primary:hover {
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background: var(--gradient-primary);
+  border-color: transparent;
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -5px rgba(59, 130, 246, 0.4);
 }
 
 .card {

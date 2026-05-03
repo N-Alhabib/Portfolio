@@ -11,21 +11,21 @@ const About = () => {
                 <div className="row g-4">
                     <div className="col-lg-6">
                         <div className="about-content fade-in-up">
-                            <h3 className="mb-4">Building the Future with Code</h3>
+                            <h3 className="mb-4">Building Reliable Systems with Code</h3>
                             <p className="lead">
-                                I'm an IT student passionate about creating elegant solutions to complex problems.
-                                My focus lies in web development and artificial intelligence, where I combine
-                                clean design principles with cutting-edge technology.
+                                Fresh IT graduate (GPA 4.15/5) with hands-on DevOps experience at a Saudi
+                                logistics startup, where I proposed and led a CI/CD initiative across staging
+                                and production environments.
                             </p>
                             <p>
-                                Currently pursuing my degree while gaining hands-on experience through internships
-                                and personal projects. I believe in continuous learning and staying updated with
-                                the latest industry trends and best practices.
+                                My graduation project — an AI-powered log anomaly detection system — achieved
+                                up to 95% accuracy across three benchmark datasets, combining Python, scikit-learn,
+                                and the Drain3 parsing algorithm in an end-to-end pipeline.
                             </p>
                             <p>
-                                My approach to development emphasizes user experience, accessibility, and
-                                maintainable code. I enjoy collaborating with teams and contributing to
-                                projects that make a real impact.
+                                I'm skilled in building automated infrastructure with GitHub Actions, Docker, and
+                                Apache, and I enjoy bridging the gap between reliable DevOps practices and smart,
+                                data-driven systems.
                             </p>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const About = () => {
                                     <FiBookOpen />
                                 </div>
                                 <h4>Education</h4>
-                                <p>IT Student specializing in Web Development and AI Technologies</p>
+                                <p>BSc in Information Technology — Qassim University (2021–2026) · GPA 4.15/5</p>
                             </div>
 
                             <div className="highlight-card">
@@ -45,7 +45,7 @@ const About = () => {
                                     <FiCode />
                                 </div>
                                 <h4>Focus Areas</h4>
-                                <p>Web Development, UI/UX Design, AI, and System Architecture</p>
+                                <p>DevOps & CI/CD, AI & Data Pipelines, REST APIs, Frontend Development</p>
                             </div>
 
                             <div className="highlight-card">
@@ -53,7 +53,7 @@ const About = () => {
                                     <FiCoffee />
                                 </div>
                                 <h4>Interests</h4>
-                                <p>Open Source, Modern Frameworks, AI Innovation</p>
+                                <p>Automation, Open Source, Log Analytics, Intelligent Infrastructure</p>
                             </div>
                         </div>
                     </div>

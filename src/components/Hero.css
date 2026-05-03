@@ -12,11 +12,35 @@
     z-index: 2;
 }
 
+.hero-label {
+    font-size: var(--font-size-lg);
+    color: var(--primary);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.hero-name {
+    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    font-weight: 900;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #fff 30%, rgba(148, 163, 184, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 40px rgba(99, 102, 241, 0.25));
+}
+
 .hero-title {
-    font-size: var(--font-size-5xl);
-    font-weight: 800;
+    font-size: clamp(1.25rem, 3vw, 1.875rem);
+    font-weight: 500;
     margin-bottom: var(--spacing-lg);
-    line-height: 1.1;
+    line-height: 1.3;
+    color: var(--text-muted);
+    letter-spacing: 0.01em;
 }
 
 .gradient-text {

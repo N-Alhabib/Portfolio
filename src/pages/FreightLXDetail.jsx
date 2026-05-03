@@ -16,7 +16,7 @@ const FreightLXDetail = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
 
-    const pdfPath = '/docs/FreightLX_Internship_Activity_Log_Nawaf_Alhabib.pdf';
+    const pdfPath = '/docs/FREIGHTLX_Experience_Certificate.pdf';
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
@@ -37,7 +37,7 @@ const FreightLXDetail = () => {
     const downloadPDF = () => {
         const link = document.createElement('a');
         link.href = pdfPath;
-        link.download = 'FreightLX_Internship_Activity_Log_Nawaf_Alhabib.pdf';
+        link.download = 'FREIGHTLX_Experience_Certificate.pdf';
         link.click();
     };
 
@@ -52,7 +52,7 @@ const FreightLXDetail = () => {
                     <div className="detail-badge">Internship Experience</div>
                     <h1 className="detail-title">COOP — FreightLX</h1>
                     <p className="detail-subtitle">
-                        Continuous Work Log: IT Intern at FreightLX
+                        IT Intern — DevOps & Platform Operations · Jan 2026 – Mar 2026
                     </p>
                 </div>
 
@@ -61,27 +61,34 @@ const FreightLXDetail = () => {
                         <h2>Internship Summary</h2>
                         <div className="internship-info">
                             <div className="info-item">
-                                <strong>Role:</strong> IT Intern
+                                <strong>Role:</strong> IT Intern — DevOps & Platform Operations
                             </div>
                             <div className="info-item">
-                                <strong>Start Date:</strong> January 11, 2026
+                                <strong>Period:</strong> January 2026 – March 2026
                             </div>
                             <div className="info-item">
-                                <strong>Last Updated:</strong> January 26, 2026
+                                <strong>Location:</strong> Riyadh, Saudi Arabia
                             </div>
                         </div>
                         <p>
-                            This document provides a comprehensive activity log of my internship at FreightLX,
-                            tracking continuous work entries including website review and feedback, UX analysis,
-                            website testing, issue reporting, and collaborative contributions to the platform.
+                            At FreightLX — a Saudi logistics startup — I worked across DevOps and platform
+                            operations, taking ownership of the CI/CD pipeline and contributing directly to
+                            platform functionality and reliability.
                         </p>
+                        <ul>
+                            <li>Proposed and led the CI/CD initiative using GitHub Actions, streamlining deployment workflows across staging and production environments.</li>
+                            <li>Integrated 12 sea ports into the freight search platform, expanding data coverage and improving search availability for end users.</li>
+                            <li>Configured and maintained deployment environments using Docker and Apache, reducing environment-related build failures through consistent setup standards.</li>
+                            <li>Enhanced platform search functionality and dashboard UI, improving interface consistency across the freight booking flow.</li>
+                            <li>Assisted in REST API integration, validation, and testing to support platform performance and reliability.</li>
+                        </ul>
                     </section>
 
                     <section className="detail-section fade-in-up delay-2">
-                        <h2>Activity Log Document</h2>
+                        <h2>Experience Certificate</h2>
                         <p className="mb-4">
-                            View the complete internship activity log below. The document includes detailed
-                            entries of daily activities, contributions, and learnings throughout the internship period.
+                            Official experience certificate issued by FreightLX upon completion of the internship,
+                            confirming my contributions to CI/CD, DevOps, API integration, and platform development.
                         </p>
 
                         <div className="pdf-actions">

@@ -16,27 +16,29 @@ const Hero = () => {
                 <div className="row align-items-center min-vh-100">
                     <div className="col-lg-12 text-center">
                         <div className="hero-content">
-                            <h1 className="hero-title fade-in-up">
-                                IT Student / Web Developer / <span className="gradient-text">AI Projects</span>
-                            </h1>
+                            <p className="hero-label fade-in-up">Hello, I'm</p>
+                            <h1 className="hero-name fade-in-up">Nawaf Alhabib</h1>
+                            <h2 className="hero-title fade-in-up">
+                                Junior Software Engineer / <span className="gradient-text">DevOps & AI</span>
+                            </h2>
 
                             <p className="hero-subtitle fade-in-up delay-1">
-                                Building clean, accessible interfaces and AI-powered systems with modern technologies.
-                                Passionate about creating exceptional user experiences and solving complex problems.
+                                Fresh IT graduate with hands-on DevOps experience — led a CI/CD initiative at a Saudi
+                                logistics startup and built an AI log anomaly detection system with 95% accuracy.
                             </p>
 
                             <div className="hero-stats fade-in-up delay-2">
                                 <div className="stat-chip">
                                     <FiAward className="stat-icon" />
-                                    <span>Graduation Project</span>
+                                    <span>GPA 4.15 / 5</span>
                                 </div>
                                 <div className="stat-chip">
                                     <FiBriefcase className="stat-icon" />
-                                    <span>Internship Experience</span>
+                                    <span>DevOps Internship</span>
                                 </div>
                                 <div className="stat-chip">
                                     <FiTrendingUp className="stat-icon" />
-                                    <span>Active Learner</span>
+                                    <span>AI Graduation Project</span>
                                 </div>
                             </div>
 
@@ -49,7 +51,8 @@ const Hero = () => {
                                     View Projects <FiArrowRight className="ms-2" />
                                 </button>
                                 <a
-                                    href="#"
+                                    href="/docs/Nawaf_AlhabibCV-IT.pdf"
+                                    download="Nawaf_AlhabibCV-IT.pdf"
                                     className="btn btn-outline-primary btn-lg ms-3"
                                     aria-label="Download my CV"
                                 >
