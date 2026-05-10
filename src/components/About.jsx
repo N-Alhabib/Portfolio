@@ -53,7 +53,7 @@ const About = () => {
                                     <FiCoffee />
                                 </div>
                                 <h4>Interests</h4>
-                                <p>Automation, Open Source, Log Analytics, Intelligent Infrastructure</p>
+                                <p>Automation, Development, AI, DevOps</p>
                             </div>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ const Hero = () => {
                             <p className="hero-label fade-in-up">Hello, I'm</p>
                             <h1 className="hero-name fade-in-up">Nawaf Alhabib</h1>
                             <h2 className="hero-title fade-in-up">
-                                Junior Software Engineer / <span className="gradient-text">DevOps & AI</span>
+                                IT Fresh Graduate | <span className="gradient-text">Software Development</span>
                             </h2>
 
                             <p className="hero-subtitle fade-in-up delay-1">
@@ -51,8 +51,8 @@ const Hero = () => {
                                     View Projects <FiArrowRight className="ms-2" />
                                 </button>
                                 <a
-                                    href="/docs/Nawaf_AlhabibCV-IT.pdf"
-                                    download="Nawaf_AlhabibCV-IT.pdf"
+                                    href="/docs/Nawaf_Alhabib_IT_CV.pdf"
+                                    download="Nawaf_Alhabib_IT_CV.pdf"
                                     className="btn btn-outline-primary btn-lg ms-3"
                                     aria-label="Download my CV"
                                 >

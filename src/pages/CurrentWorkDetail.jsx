@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft, FiTarget, FiTrendingUp, FiSearch } from 'react-icons/fi';
-import { SiDocker, SiGithubactions, SiPython, SiGit, SiYaml } from 'react-icons/si';
+import { SiDocker, SiGithubactions, SiPython, SiGit } from 'react-icons/si';
 import './ProjectDetail.css';
 
 const CurrentWorkDetail = () => {
@@ -98,9 +98,8 @@ const CurrentWorkDetail = () => {
                                 <SiGit className="tech-icon" />
                                 <span className="tech-name">Git</span>
                             </div>
-                            <div className="tech-pill yaml">
-                                <SiYaml className="tech-icon" />
-                                <span className="tech-name">YAML</span>
+                            <div className="tech-pill">
+                                <span className="tech-name">Claude Code</span>
                             </div>
                         </div>
                     </section>

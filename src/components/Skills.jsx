@@ -13,7 +13,7 @@ const Skills = () => {
         },
         {
             title: 'Development & APIs',
-            skills: ['JavaScript', 'HTML', 'CSS', 'REST APIs', 'API Testing', 'Git', 'GitHub']
+            skills: ['JavaScript', 'HTML', 'CSS', 'React', 'REST APIs', 'API Testing', 'Git', 'GitHub']
         }
     ];
 
