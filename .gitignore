@@ -43,3 +43,6 @@ pnpm-debug.log*
 .DS_Store
 .vscode/
 .idea/
+
+# Local docs
+WORKFLOW.md

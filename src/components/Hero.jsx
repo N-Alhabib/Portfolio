@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         <section className="hero-section">
             <div className="container">
-                <div className="row align-items-center min-vh-100">
+                <div className="row align-items-center">
                     <div className="col-lg-12 text-center">
                         <div className="hero-content">
                             <p className="hero-label fade-in-up">Hello, I'm</p>

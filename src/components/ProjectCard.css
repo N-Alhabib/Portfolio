@@ -7,21 +7,29 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(160deg, rgba(15, 23, 42, 0.95), rgba(10, 15, 30, 0.9));
+    background: var(--gradient-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all var(--transition);
 }
 
+/* Animated gradient top border */
 .project-card .card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
-    background-size: 200% 100%;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--purple), var(--accent), var(--primary));
+    background-size: 300% 100%;
     transform: scaleX(0);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: left;
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     animation: shimmer 3s linear infinite paused;
+    border-radius: 2px 2px 0 0;
 }
 
 .project-card .card:hover::before {
@@ -29,97 +37,107 @@
     animation-play-state: running;
 }
 
-@keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-}
-
+/* Mouse-follow glow */
 .project-card .card::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(99, 102, 241, 0.06), transparent 40%);
+    background: radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(99, 102, 241, 0.07), transparent 45%);
     opacity: 0;
-    transition: opacity 0.4s;
+    transition: opacity var(--transition);
     pointer-events: none;
 }
 
-.project-card .card:hover::after {
-    opacity: 1;
-}
+.project-card .card:hover::after { opacity: 1; }
 
 .project-card .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.3);
-    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-6px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md), 0 0 0 1px var(--border-hover), 0 0 50px rgba(99, 102, 241, 0.07);
 }
 
 .project-subtitle {
-    font-size: var(--font-size-sm);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.15em;
+    margin-bottom: 0.6rem;
 }
 
 .project-card .card-title {
-    font-size: var(--font-size-2xl);
-    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
     color: var(--text);
+    line-height: 1.25;
 }
 
 .project-card .card-text {
     color: var(--text-muted);
     margin-bottom: var(--spacing-md);
-    line-height: 1.7;
+    line-height: 1.75;
+    font-size: var(--font-size-sm);
     flex-grow: 1;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
     margin-bottom: var(--spacing-md);
 }
 
 .project-tags .badge {
-    font-size: var(--font-size-xs);
-    padding: 0.4rem 0.8rem;
+    font-size: 0.68rem;
+    padding: 0.3rem 0.7rem;
     font-weight: 500;
+    letter-spacing: 0.03em;
+    background: rgba(99, 102, 241, 0.12) !important;
+    color: var(--primary) !important;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 50px;
 }
 
 .view-details {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary);
+    color: var(--text-dim);
     font-weight: 600;
+    font-size: var(--font-size-sm);
     margin-top: auto;
-    transition: all var(--transition-fast);
+    transition: all var(--transition);
 }
 
 .project-card .card:hover .view-details {
-    gap: 1rem;
-    color: var(--primary-hover);
+    gap: 0.85rem;
+    color: var(--primary);
 }
 
 .arrow-icon {
-    transition: transform var(--transition-fast);
+    transition: transform var(--transition);
 }
 
 .project-card .card:hover .arrow-icon {
-    transform: translateX(5px);
+    transform: translateX(4px);
 }
 
 .project-card .card-body {
     display: flex;
     flex-direction: column;
     padding: var(--spacing-lg);
+    height: 100%;
 }
 
-/* Keyboard focus state */
 .project-card .card:focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 4px;
+}
+
+@keyframes shimmer {
+    0%   { background-position: -300% 0; }
+    100% { background-position: 300% 0; }
 }

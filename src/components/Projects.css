@@ -1,17 +1,20 @@
 .projects-section {
-    background-color: var(--bg);
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
 }
 
-.section-description {
-    text-align: center;
-    color: var(--text-muted);
-    font-size: var(--font-size-lg);
-    max-width: 600px;
-    margin: 0 auto var(--spacing-xl);
+.projects-section::before {
+    content: '';
+    position: absolute;
+    right: -150px;
+    top: 30%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, transparent 65%);
+    pointer-events: none;
 }
 
 @media (max-width: 991px) {
-    .projects-section .row {
-        justify-content: center;
-    }
+    .projects-section .row { justify-content: center; }
 }
