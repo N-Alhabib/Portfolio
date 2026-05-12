@@ -1,25 +1,37 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { FiMail, FiGithub, FiLinkedin, FiSend, FiPhone } from 'react-icons/fi';
 import './Contact.css';
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Form is non-functional as per requirements
-        alert('This is a demo form. Form submission is not implemented yet.');
+        setStatus('sending');
+
+        try {
+            await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                {
+                    from_name: formData.name,
+                    from_email: formData.email,
+                    message: formData.message,
+                    to_email: 'n.alhabib1@outlook.com',
+                },
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            );
+            setStatus('success');
+            setFormData({ name: '', email: '', message: '' });
+        } catch {
+            setStatus('error');
+        }
     };
 
     return (
@@ -113,8 +125,20 @@ const Contact = () => {
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="btn btn-primary w-100">
-                                <FiSend className="me-2" /> Send Message
+                            {status === 'success' && (
+                                <div className="alert alert-success mb-3" role="alert">
+                                    Message sent! I'll get back to you soon.
+                                </div>
+                            )}
+                            {status === 'error' && (
+                                <div className="alert alert-danger mb-3" role="alert">
+                                    Something went wrong. Please try again or email me directly.
+                                </div>
+                            )}
+
+                            <button type="submit" className="btn btn-primary w-100" disabled={status === 'sending'}>
+                                <FiSend className="me-2" />
+                                {status === 'sending' ? 'Sending...' : 'Send Message'}
                             </button>
                         </form>
                     </div>
